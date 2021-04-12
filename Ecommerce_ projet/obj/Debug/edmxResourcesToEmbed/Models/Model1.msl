@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BdecommerceModelStoreContainer" CdmEntityContainer="BdecommerceEntities">
+    <EntitySetMapping Name="Vendeur">
+      <EntityTypeMapping TypeName="BdecommerceModel.Vendeur">
+        <MappingFragment StoreEntitySet="Vendeur">
+          <ScalarProperty Name="identifiant" ColumnName="identifiant" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produit">
+      <EntityTypeMapping TypeName="BdecommerceModel.Produit">
+        <MappingFragment StoreEntitySet="Produit">
+          <ScalarProperty Name="titre" ColumnName="titre" />
+          <ScalarProperty Name="idproduit" ColumnName="idproduit" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+          <ScalarProperty Name="quantite" ColumnName="quantite" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="BdecommerceModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="soldeinitial" ColumnName="soldeinitial" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="identifiantClient" ColumnName="identifiantClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commande">
+      <EntityTypeMapping TypeName="BdecommerceModel.Commande">
+        <MappingFragment StoreEntitySet="Commande">
+          <ScalarProperty Name="prix_total" ColumnName="prix_total" />
+          <ScalarProperty Name="quantite" ColumnName="quantite" />
+          <ScalarProperty Name="identifiantClient" ColumnName="identifiantClient" />
+          <ScalarProperty Name="idcommande" ColumnName="idcommande" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,91 @@
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Ecommerce_ projet.dll.config
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Ecommerce_ projet.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Ecommerce_ projet.pdb
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csc.exe
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csc.exe.config
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csc.rsp
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csi.exe
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csi.exe.config
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\csi.rsp
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.AppContext.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Console.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.IO.Compression.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Net.Http.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.ValueTuple.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\vbc.exe
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\vbc.exe.config
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\vbc.rsp
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\VBCSCompiler.exe
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Antlr3.Runtime.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\EntityFramework.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\EntityFramework.SqlServer.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Newtonsoft.Json.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Helpers.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Mvc.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Optimization.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Razor.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.Razor.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\WebGrease.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\EntityFramework.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\EntityFramework.SqlServer.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Helpers.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Mvc.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Optimization.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.Razor.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\System.Web.WebPages.Razor.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Newtonsoft.Json.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Antlr3.Runtime.pdb
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\EntityFramework.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.Razor.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\obj\Debug\Ecommerce_ projet.csprojAssemblyReference.cache
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\obj\Debug\Ecommerce_ projet.csproj.CoreCompileInputs.cache
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\obj\Debug\Ecommerce_ projet.csproj.CopyComplete
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\obj\Debug\Ecommerce_ projet.dll
+C:\Users\DevOps\source\repos\Ecommerce_ projet\Ecommerce_ projet\obj\Debug\Ecommerce_ projet.pdb

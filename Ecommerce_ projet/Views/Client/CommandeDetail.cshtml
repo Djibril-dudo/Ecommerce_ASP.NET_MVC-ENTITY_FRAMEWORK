@@ -1,0 +1,280 @@
+﻿@using Ecommerce__projet.Models.Panier;
+
+@{ ViewBag.Title = "Commande"; }
+<!DOCTYPE html>
+
+<html lang="zxx">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>Eshop - eCommerce HTML5 Template.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap -->
+    <link href="~/DesignClient/css/bootstrap.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/DesignClient/css/magnific-popup.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/DesignClient/css/font-awesome.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="~/DesignClient/css/jquery.fancybox.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="~/DesignClient/css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/animate.css">
+    <!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/flex-slider.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/DesignClient/css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="~/DesignClient/css/slicknav.min.css">
+
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="~/DesignClient/css/reset.css">
+    <link rel="stylesheet" href="~/DesignClient/style.css">
+    <link rel="stylesheet" href="~/DesignClient/css/responsive.css">
+
+
+
+</head>
+<body class="js">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Header -->
+    <header class="header shop">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <!-- Top Left -->
+                        <!--/ End Top Left -->
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-12">
+                        <!-- Top Right -->
+                        <!-- End Top Right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <div class="middle-inner">
+            <div class="container">
+                <div class="row">
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="cat-nav-head">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="menu-area">
+                                <!-- Main Menu -->
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="navbar-collapse">
+                                        <div class="nav-inner">
+                                            <ul class="nav main-menu menu navbar-nav">
+                                                <li class="active"><a href="#">Home</a></li>
+                                                <li><a @Html.ActionLink("Nos Produits", "InterfaceGenerale", "Client")></a></li>
+                                                <li><a href="#">Service</a></li>
+                                                <li>
+                                                    <a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+                                                    <ul class="dropdown">
+                                                        <li><a href="cart.html">Cart</a></li>
+                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                    </ul>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!--/ End Main Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!--/ End Header -->
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bread-inner">
+                        <ul class="bread-list">
+                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+                            <li class="active"><a href="blog-single.html">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <!-- Shopping Cart -->
+    @if (Session["panier"] == null)
+    {
+        <div class="alert alert-danger">
+            <strong>Votre Panier est vide</strong>
+
+        </div>
+    }
+    else
+    {
+        <div class="shopping-cart section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Shopping Summery -->
+                        <table class="table shopping-summery">
+                            <thead>
+                                <tr class="main-hading">
+                                    <th>IMAGE</th>
+                                    <th>NOM</th>
+                                    <th class="text-center">PRIX TOTAL</th>
+                                    <th class="text-center">QUANTITE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{ int Total = 0;}
+                                @foreach (PanierProduit pa in (List<PanierProduit>)Session["panier"])
+                                {
+                                    int total1 = Convert.ToInt32(pa.Quantite * pa.Produitpanier.prix);
+                                    Total = Convert.ToInt32(Total + total1);
+                                    <tr>
+                                        <td class="image" data-title="No"><img src="~/PhotoProduit/@pa.Produitpanier.image" alt="#"></td>
+                                        <td class="product-des" data-title="Description">
+                                            <p class="product-name"><a href="#">@pa.Produitpanier.nom </a></p>
+
+                                        </td>
+                                        <td class="price" data-title="Price"><span>@pa.Produitpanier.prix </span></td>
+                                        <td class="qty" data-title="Qty"><span>@pa.Quantite </span></td>
+                                        <!--/ End Input Order -->
+                                     
+                                    </tr>
+                                }
+
+
+                            </tbody>
+                        </table>
+                        <!--/ End Shopping Summery -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Total Amount -->
+                        <div class="total-amount">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-5 col-12">
+                                    <div class="left">
+                                       
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-7 col-12">
+
+                                    <div class="right">
+                                        <p>
+                                            Veuillez choissir votre identifiant sinon ajouter un nouveau
+                                            <a href="@Url.Action("InscrireClient","Client")"> <i style="color:darkorange">clique ici</i></a>
+                                        </p>
+
+                                        @using (Html.BeginForm("SaveCommande", "Client"))
+                                        {
+                                            @Html.AntiForgeryToken()
+
+
+                                    <div class="form-group">
+
+                                        @Html.DropDownList("listeclient", ViewBag.listvendeur as SelectList, "Choisissez un identifiant")
+
+                                        <div class="single-widget get-button">
+                                            <div class="content">
+                                                <button class="btn" type="submit">Paiement</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                        }
+
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End Total Amount -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+    <!--/ End Shopping Cart -->
+    <!-- Jquery -->
+    <script src="~/DesignClient/js/jquery.min.js"></script>
+    <script src="~/DesignClient/js/jquery-migrate-3.0.0.js"></script>
+    <script src="~/DesignClient/js/jquery-ui.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/DesignClient/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/DesignClient/js/bootstrap.min.js"></script>
+    <!-- Color JS -->
+    <script src="~/DesignClient/js/colors.js"></script>
+    <!-- Slicknav JS -->
+    <script src="~/DesignClient/js/slicknav.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="~/DesignClient/js/owl-carousel.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="~/DesignClient/js/magnific-popup.js"></script>
+    <!-- Fancybox JS -->
+    <script src="~/DesignClient/js/facnybox.min.js"></script>
+    <!-- Waypoints JS -->
+    <script src="~/DesignClient/js/waypoints.min.js"></script>
+    <!-- Countdown JS -->
+    <script src="~/DesignClient/js/finalcountdown.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="~/DesignClient/js/nicesellect.js"></script>
+    <!-- Ytplayer JS -->
+    <script src="~/DesignClient/js/ytplayer.min.js"></script>
+    <!-- Flex Slider JS -->
+    <script src="~/DesignClient/js/flex-slider.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/scrollup.js"></script>
+    <!-- Onepage Nav JS -->
+    <script src="~/DesignClient/js/onepage-nav.min.js"></script>
+    <!-- Easing JS -->
+    <script src="~/DesignClient/js/easing.js"></script>
+    <!-- Active JS -->
+    <script src="~/DesignClient/js/active.js"></script>
+</body>
+</html>

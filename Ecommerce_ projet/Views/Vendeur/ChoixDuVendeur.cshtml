@@ -1,0 +1,92 @@
+﻿@model Ecommerce__projet.Models.Vendeur
+
+<!DOCTYPE html>
+
+<html lang="zxx">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>Eshop - eCommerce HTML5 Template.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap -->
+    <link href="~/DesignClient/css/bootstrap.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/DesignClient/css/magnific-popup.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/DesignClient/css/font-awesome.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="~/DesignClient/css/jquery.fancybox.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="~/DesignClient/css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/animate.css">
+    <!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="~/DesignClient/css/flex-slider.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/DesignClient/css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="~/DesignClient/css/slicknav.min.css">
+
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="~/DesignClient/css/reset.css">
+    <link rel="stylesheet" href="~/DesignClient/style.css">
+    <link rel="stylesheet" href="~/DesignClient/css/responsive.css">
+
+
+
+</head>
+<body class="js">
+
+    <section class="shop checkout section" style="background-color:darkorange">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="checkout-form">
+                        <h2>BIENVENUE</h2>
+                        <p>choisir un identifiant ou creer un nouveau </p>
+                        @using (Html.BeginForm("listeproduit", "Vendeur"))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                <h4>Vendeur</h4>
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="form-group">
+                                    @Html.DropDownList("listvendeur", ViewBag.listvendeur as SelectList, "Choisissez un identifiant")
+
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Valider" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+
+                        <div>
+
+                            @Html.ActionLink("Ajouter un nouveau client", "InscrireVendeur")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Ecommerce__projet.Models.Commande>
+@{ ViewBag.Title = "affichercommande";
+    Layout = "~/Views/Shared/_LayoutVendre.cshtml";
+
+}
+
+
+</br>
+</br></br></br></br>
+<h2>Les Commandes</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idcommande)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.identifiantClient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix_total)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idcommande)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.identifiantClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quantite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prix_total)
+            </td>
+
+        </tr>
+    }
+
+</table>

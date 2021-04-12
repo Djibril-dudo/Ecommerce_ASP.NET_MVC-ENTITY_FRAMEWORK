@@ -1,0 +1,19 @@
+﻿@model Ecommerce__projet.Models.Vendeur
+
+@{
+    ViewBag.Title = "Vendeur";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Vendeur</h2>
+
+<div style="float:center">
+    @Html.DropDownList("vendeurlist", ViewBag.listvendeur as SelectList, "Choisissez un identifiant")
+
+    <li>@Html.ActionLink("Creer un Vendeur", "Vend", "Vendeur")</li>
+
+
+
+
+</div>
+

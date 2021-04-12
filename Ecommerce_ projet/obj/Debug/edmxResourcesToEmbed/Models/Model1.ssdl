@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BdecommerceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="identifiantClient" />
+    </Key>
+    <Property Name="identifiantClient" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nom" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="prenom" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="soldeinitial" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Commande">
+    <Key>
+      <PropertyRef Name="idcommande" />
+    </Key>
+    <Property Name="idcommande" Type="int" Nullable="false" />
+    <Property Name="identifiantClient" Type="nchar" MaxLength="10" />
+    <Property Name="quantite" Type="int" />
+    <Property Name="prix_total" Type="int" />
+  </EntityType>
+  <EntityType Name="Produit">
+    <Key>
+      <PropertyRef Name="idproduit" />
+    </Key>
+    <Property Name="idproduit" Type="int" Nullable="false" />
+    <Property Name="nom" Type="varchar" MaxLength="50" />
+    <Property Name="prix" Type="int" />
+    <Property Name="quantite" Type="int" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+    <Property Name="titre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vendeur">
+    <Key>
+      <PropertyRef Name="identifiant" />
+    </Key>
+    <Property Name="identifiant" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nom" Type="varchar" MaxLength="50" />
+    <Property Name="prenom" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Commande_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="Commande" Type="Self.Commande" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="identifiantClient" />
+      </Principal>
+      <Dependent Role="Commande">
+        <PropertyRef Name="identifiantClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BdecommerceModelStoreContainer">
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Commande" EntityType="Self.Commande" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produit" EntityType="Self.Produit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendeur" EntityType="Self.Vendeur" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Commande_Client" Association="Self.FK_Commande_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Commande" EntitySet="Commande" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
